@@ -28,7 +28,7 @@ const Users = () => {
                         version="4"
 
                         pagination
-                        data={appState}
+                       // data={appState}
                     >
                         <TableHeaderColumn isKey dataField="id" className="tbl" width="10%">
                             No
