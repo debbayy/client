@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ShowContextTokenProvider } from './views/components/context/showContext';
+import { BrowserRouter as Router } from "react-router-dom";
+// import { ShowContextTokenProvider } from "./components/context/showContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ShowContextTokenProvider>
+      <Router>
+        <App />
+      </Router>
+    </ShowContextTokenProvider>
   </React.StrictMode>
 );
 
